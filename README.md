@@ -5,9 +5,9 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@thienmd/react-native-image-editor"><img src="http://img.shields.io/npm/v/react-native-image-editor.svg?style=flat" /></a>
-  <a href="https://github.com/ThienMD/react-native-image-editor/pulls"><img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" /></a>
-  <a href="https://github.com/ThienMD/react-native-image-editor#License"><img src="https://img.shields.io/npm/l/react-native-image-editor.svg?style=flat" /></a>
+  <a href="https://www.npmjs.com/package/@ezz-alhashedi/react-native-image-editor"><img src="http://img.shields.io/npm/v/react-native-image-editor.svg?style=flat" /></a>
+  <a href="https://github.com/ezz-alhashedi/react-native-image-editor/pulls"><img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" /></a>
+  <a href="https://github.com/ezz-alhashedi/react-native-image-editor#License"><img src="https://img.shields.io/npm/l/react-native-image-editor.svg?style=flat" /></a>
 </p>
 
     ReactNative: Native Image Editor (Android/iOS)
@@ -17,20 +17,20 @@ If this project has helped you out, please support us with a star 🌟
 </h1>
 This library is a React Native bridge around native photo editor libraries. It allows you to edit any photo by providing below set of features:
 
--   _**Cropping**_
+-   _**Cropping with Black Background and FreeStyle Enabled**_
+-   _**Scaling Objects**_
+-   _**Saving to Photos and Sharing with Enhanced Send Button**_
 -   _**Adding Images -Stickers-**_
 -   _**Adding Text with Colors**_
 -   _**Drawing with Colors**_
--   _**Scaling and Rotating Objects**_
 -   _**Deleting Objects**_
--   _**Saving to Photos and Sharing**_
 -   _**Cool Animations**_
 
 # Introduction
 
-`@thienmd/react-native-image-editor` is a fork of the deprecated `react-native-photo-editor`. The original library had not been updated for a while and had several limitations, including inconsistent user interfaces between iOS and Android.
+`@ezz-alhashedi/react-native-image-editor` is a fork of the deprecated `react-native-photo-editor`. The original library had not been updated for a while and had several limitations, including inconsistent user interfaces between iOS and Android.
 
-Seeing the need for a more maintained and consistent library, I decided to fork `react-native-photo-editor` and create `@thienmd/react-native-image-editor`.
+Seeing the need for a more maintained and consistent library, I decided to fork `react-native-photo-editor` and create `@ezz-alhashedi/react-native-image-editor` with additional improvements including an enhanced send button, freestyle cropping with a black background, and a streamlined interface without the rotation bar.
 
 The main goals of this library are:
 
@@ -50,15 +50,15 @@ If you're currently using `react-native-photo-editor` and want to switch to this
 
 1. **Uninstall the old library.** Run `npm uninstall react-native-photo-editor` or `yarn remove react-native-photo-editor`, depending on whether you're using npm or yarn.
 
-2. **Install this library.** Run `npm install @thienmd/react-native-image-editor` or `yarn add @thienmd/react-native-image-editor`.
+2. **Install this library.** Run `npm install @ezz-alhashedi/react-native-image-editor` or `yarn add @ezz-alhashedi/react-native-image-editor`.
 
-3. **Update your JavaScript files.** Replace all instances of `import PhotoEditor from 'react-native-photo-editor'` with `import ImageEditor from '@thienmd/react-native-image-editor'`.
+3. **Update your JavaScript files.** Replace all instances of `import PhotoEditor from 'react-native-photo-editor'` with `import ImageEditor from '@ezz-alhashedi/react-native-image-editor'`.
 
 4. **Update your Podfile.** If you're using iOS, make the following changes in your Podfile:
 
-    Replace `pod 'RNPhotoEditor', :path => '../node_modules/react-native-photo-editor'` with `pod 'RNImageEditor', :path => '../node_modules/@thienmd/react-native-image-editor'`.
+    Replace `pod 'RNPhotoEditor', :path => '../node_modules/react-native-photo-editor'` with `pod 'RNImageEditor', :path => '../node_modules/@ezz-alhashedi/react-native-image-editor'`.
 
-    Replace `pod 'iOSPhotoEditor', :git => 'https://github.com/prscX/photo-editor', :branch => 'master'` with `pod 'iOSPhotoEditor', :git => 'https://github.com/ThienMD/photo-editor', :branch => 'master'`.
+    Replace `pod 'iOSPhotoEditor', :git => 'https://github.com/prscX/photo-editor', :branch => 'master'` with `pod 'iOSPhotoEditor', :git => 'https://github.com/ezz-alhashedi/photo-editor', :branch => 'master'`.
 
 5. **Run `pod install`.** If you're using iOS, run `pod install` in your `ios` directory to install the new library.
 
@@ -66,7 +66,7 @@ Please note that the API of this library might be different from `react-native-p
 
 ## 📖 Getting started
 
-`$ yarn add @thienmd/react-native-image-editor`
+`$ yarn add @ezz-alhashedi/react-native-image-editor`
 
 > This library is supported React Native V61 and above
 
@@ -80,7 +80,7 @@ Please note that the API of this library might be different from `react-native-p
   use_native_modules!
 
   use_frameworks! :linkage => :static
-  pod "iOSPhotoEditor", :git => "https://github.com/ThienMD/photo-editor", :branch => "master"
+  pod "iOSPhotoEditor", :git => "https://github.com/ezz-alhashedi/photo-editor", :branch => "master"
 
   post_install do |installer|
     installer.pods_project.targets.each do |target|
@@ -168,7 +168,7 @@ If you want stickers, please add them to your native project:
 ## 💻 Usage
 
 ```
-import ImageEditor from '@thienmd/react-native-image-editor'
+import ImageEditor from '@ezz-alhashedi/react-native-image-editor'
 
 ImageEditor.Edit({
     path: RNFS.DocumentDirectoryPath + "/photo.jpg"
@@ -195,7 +195,7 @@ ImageEditor.Edit({
 
 ## 🔧 Troubleshooting
 
-### If using React Native Firebase v6+ or facing any of the following issues: [#104](https://github.com/ThienMD/react-native-image-editor/issues/104), [#93](https://github.com/ThienMD/react-native-image-editor/issues/93)
+### If using React Native Firebase v6+ or facing any of the following issues: [#104](https://github.com/ezz-alhashedi/react-native-image-editor/issues/104), [#93](https://github.com/ezz-alhashedi/react-native-image-editor/issues/93)
 
 -   Add the following to your `podfile -> ios/podfile` and run `pod install`
 
@@ -219,7 +219,7 @@ As [@react-native-firebase documentation](https://rnfirebase.io/#allow-ios-stati
 $RNFirebaseAsStaticFramework = true
 ```
 
-### [**swift*FORCE_LOAD*$\_swiftUniformTypeIdentifiers / **swift*FORCE_LOAD*$\_swiftCoreMIDI](https://github.com/ThienMD/react-native-image-editor/issues/171)
+### [**swift*FORCE_LOAD*$\_swiftUniformTypeIdentifiers / **swift*FORCE_LOAD*$\_swiftCoreMIDI](https://github.com/ezz-alhashedi/react-native-image-editor/issues/171)
 
 ## ✨ Credits
 
@@ -229,7 +229,7 @@ $RNFirebaseAsStaticFramework = true
 
 ## 🤔 How to contribute
 
-Have an idea? Found a bug? Please raise to [ISSUES](https://github.com/ThienMD/react-native-image-editor/issues).
+Have an idea? Found a bug? Please raise to [ISSUES](https://github.com/ezz-alhashedi/react-native-image-editor/issues).
 Contributions are welcome and are greatly appreciated! Every little bit helps, and credit will always be given.
 
 ## 💫 Where is this library used?
@@ -243,4 +243,4 @@ I open-source almost everything I can, and I try to reply everyone needing help 
 However, if you get some profit from this or just want to encourage me to continue creating stuff, there are few ways you can do it:
 
 -   Starring and sharing the projects you like 🚀
--   If you're feeling especially charitable, please follow [prscX](https://github.com/prscX) on GitHub.
+-   If you're feeling especially charitable, please follow [ezz-alhashedi](https://github.com/ezz-alhashedi) on GitHub.
