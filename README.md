@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@ezz-alhashedi/react-native-image-editor"><img src="http://img.shields.io/npm/v/react-native-image-editor.svg?style=flat" /></a>
+  <a href="https://www.npmjs.com/package/alhashedi-react-native-image-editor"><img src="http://img.shields.io/npm/v/react-native-image-editor.svg?style=flat" /></a>
   <a href="https://github.com/ezz-alhashedi/react-native-image-editor/pulls"><img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" /></a>
   <a href="https://github.com/ezz-alhashedi/react-native-image-editor#License"><img src="https://img.shields.io/npm/l/react-native-image-editor.svg?style=flat" /></a>
 </p>
@@ -30,9 +30,9 @@ This library is a React Native bridge around native photo editor libraries. It a
 
 # Introduction
 
-`@ezz-alhashedi/react-native-image-editor` is a fork of the deprecated `react-native-photo-editor`. The original library had not been updated for a while and had several limitations, including inconsistent user interfaces between iOS and Android.
+`alhashedi-react-native-image-editor` is a fork of the deprecated `react-native-photo-editor`. The original library had not been updated for a while and had several limitations, including inconsistent user interfaces between iOS and Android.
 
-Seeing the need for a more maintained and consistent library, I decided to fork `react-native-photo-editor` and create `@ezz-alhashedi/react-native-image-editor` with additional improvements including an enhanced send button, freestyle cropping with a black background, and a streamlined interface without the rotation bar.
+Seeing the need for a more maintained and consistent library, I decided to fork `react-native-photo-editor` and create `alhashedi-react-native-image-editor` with additional improvements including an enhanced send button, freestyle cropping with a black background, and a streamlined interface without the rotation bar.
 
 The main goals of this library are:
 
@@ -52,13 +52,13 @@ If you're currently using `react-native-photo-editor` and want to switch to this
 
 1. **Uninstall the old library.** Run `npm uninstall react-native-photo-editor` or `yarn remove react-native-photo-editor`, depending on whether you're using npm or yarn.
 
-2. **Install this library.** Run `npm install @ezz-alhashedi/react-native-image-editor` or `yarn add @ezz-alhashedi/react-native-image-editor`.
+2. **Install this library.** Run `npm install alhashedi-react-native-image-editor` or `yarn add alhashedi-react-native-image-editor`.
 
-3. **Update your JavaScript files.** Replace all instances of `import PhotoEditor from 'react-native-photo-editor'` with `import ImageEditor from '@ezz-alhashedi/react-native-image-editor'`.
+3. **Update your JavaScript files.** Replace all instances of `import PhotoEditor from 'react-native-photo-editor'` with `import ImageEditor from 'alhashedi-react-native-image-editor'`.
 
 4. **Update your Podfile.** If you're using iOS, make the following changes in your Podfile:
 
-    Replace `pod 'RNPhotoEditor', :path => '../node_modules/react-native-photo-editor'` with `pod 'RNImageEditor', :path => '../node_modules/@ezz-alhashedi/react-native-image-editor'`.
+    Replace `pod 'RNPhotoEditor', :path => '../node_modules/react-native-photo-editor'` with `pod 'RNImageEditor', :path => '../node_modules/alhashedi-react-native-image-editor'`.
 
     Replace `pod 'iOSPhotoEditor', :git => 'https://github.com/prscX/photo-editor', :branch => 'master'` with `pod 'iOSPhotoEditor', :git => 'https://github.com/ezz-alhashedi/photo-editor', :branch => 'master'`.
 
@@ -68,7 +68,7 @@ Please note that the API of this library might be different from `react-native-p
 
 ## 📖 Getting started
 
-`$ yarn add @ezz-alhashedi/react-native-image-editor`
+`$ yarn add alhashedi-react-native-image-editor`
 
 > This library is supported React Native V61 and above
 
@@ -170,7 +170,7 @@ If you want stickers, please add them to your native project:
 ## 💻 Usage
 
 ```
-import ImageEditor from '@ezz-alhashedi/react-native-image-editor'
+import ImageEditor from 'alhashedi-react-native-image-editor'
 
 ImageEditor.Edit({
     path: RNFS.DocumentDirectoryPath + "/photo.jpg"
@@ -246,31 +246,3 @@ However, if you get some profit from this or just want to encourage me to contin
 
 -   Starring and sharing the projects you like 🚀
 -   If you're feeling especially charitable, please follow [ezz-alhashedi](https://github.com/ezz-alhashedi) on GitHub.
-
-# alhashedi-react-native-image-editor
-
-React Native: Native Image Editor
-
-## Installation
-
-```sh
-npm install alhashedi-react-native-image-editor
-```
-
-## Usage
-
-// ...existing usage instructions...
-
-## Contributing
-
-// ...existing contributing instructions...
-
-## License
-
-Apache-2.0
-
-## Links
-
-- [Homepage](https://github.com/ezz-105/react-native-image-editor.git)
-- [Repository](https://github.com/ezz-105/react-native-image-editor.git)
-- [Issues](https://github.com/ezz-105/react-native-image-editor/issues)
