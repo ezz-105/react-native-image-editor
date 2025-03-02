@@ -18,6 +18,7 @@ If this project has helped you out, please support us with a star 🌟
 This library is a React Native bridge around native photo editor libraries. It allows you to edit any photo by providing below set of features:
 
 -   _**Cropping with Black Background and FreeStyle Enabled**_
+-   _**Arabic**_
 -   _**Scaling Objects**_
 -   _**Saving to Photos and Sharing with Enhanced Send Button**_
 -   _**Adding Images -Stickers-**_
@@ -25,6 +26,7 @@ This library is a React Native bridge around native photo editor libraries. It a
 -   _**Drawing with Colors**_
 -   _**Deleting Objects**_
 -   _**Cool Animations**_
+
 
 # Introduction
 
@@ -244,3 +246,31 @@ However, if you get some profit from this or just want to encourage me to contin
 
 -   Starring and sharing the projects you like 🚀
 -   If you're feeling especially charitable, please follow [ezz-alhashedi](https://github.com/ezz-alhashedi) on GitHub.
+
+# alhashedi-react-native-image-editor
+
+React Native: Native Image Editor
+
+## Installation
+
+```sh
+npm install alhashedi-react-native-image-editor
+```
+
+## Usage
+
+// ...existing usage instructions...
+
+## Contributing
+
+// ...existing contributing instructions...
+
+## License
+
+Apache-2.0
+
+## Links
+
+- [Homepage](https://github.com/ezz-105/react-native-image-editor.git)
+- [Repository](https://github.com/ezz-105/react-native-image-editor.git)
+- [Issues](https://github.com/ezz-105/react-native-image-editor/issues)
