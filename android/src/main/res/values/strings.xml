@@ -8,7 +8,7 @@
     <string name="gallery">معرض الصور</string>
     <string name="upload_dialog_title">تحميل صورة</string>
     <string name="upload_picker_title">اختيار صورة</string>
-    <string name="directory_create_fail">فشل في انشاء المسار'</string>
+    <string name="directory_create_fail">فشل في انشاء المسار</string>
     <string name="access_media_permissions_msg">لقد رفضت الوصول إلى التخزين، لن يتم إضافة أي صور.</string>
     <string name="continue_txt">متابعة</string>
     <string name="not_now">ليس الآن</string>
